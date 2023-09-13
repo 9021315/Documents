@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Canvas">Canvas</a></li>
+  <li><a href="#Eduarte">Eduarte</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+<h3>Using CSS to style an HTML Form</h3>
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
